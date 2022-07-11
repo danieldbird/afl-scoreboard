@@ -30,7 +30,7 @@ With the correct line-height, this approach works perfectly.
 
 ## Given More Time
 
-If I wanted to spend more time creating this into a fully fledged and reusable scoreboard, I would like to be able to click on the team logo and have a list of the team logos pop up to select.
+If I wanted to spend more time making this into a fully fledged and reusable scoreboard, I would like to be able to click on the team logo and have a list of the team logos pop up to select.
 
 ## Cap Feathers 🪶
 
