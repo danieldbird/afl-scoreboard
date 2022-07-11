@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/afl-scoreboard/static/css/main.8e666c14.css",
+    "main.js": "/afl-scoreboard/static/js/main.21619592.js",
+    "static/js/787.abbcb2e9.chunk.js": "/afl-scoreboard/static/js/787.abbcb2e9.chunk.js",
+    "static/media/team2-logo.svg": "/afl-scoreboard/static/media/team2-logo.dcd0b1c5fc61d59736f1782d810e61f5.svg",
+    "static/media/team1-logo.svg": "/afl-scoreboard/static/media/team1-logo.d9075e59fdee6e24f8d322373a65fdde.svg",
+    "index.html": "/afl-scoreboard/index.html",
+    "main.8e666c14.css.map": "/afl-scoreboard/static/css/main.8e666c14.css.map",
+    "main.21619592.js.map": "/afl-scoreboard/static/js/main.21619592.js.map",
+    "787.abbcb2e9.chunk.js.map": "/afl-scoreboard/static/js/787.abbcb2e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e666c14.css",
+    "static/js/main.21619592.js"
+  ]
+}
