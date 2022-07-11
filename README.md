@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# AFL Scoreboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Alt text](https://github.com/danieldbird/afl-scoreboard/blob/main/demo.gif?raw=true "Title")
 
-## Available Scripts
+## Tech Stack
 
-In the project directory, you can run:
+This full stack project was created in an hour or so with React and vanilla CSS.
 
-### `npm start`
+## The Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This tiny project was created very quickly after my team won. It separates out components for re-use, and uses react state.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Left-click adds either a goal or behind, and right-click deducts a goal or behind, or resets the score.
 
-### `npm test`
+## Learning Goals
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Just to have fun, and work out a way to create an animated sliding counter.
 
-### `npm run build`
+## Challenges
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The challenge was to workout how to do the slider. There would be many ways to do this. Some more complicated than others. I could create and destroy the numbers (elements) on the fly, however I just wanted to achieve the objective as quickly as possible.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+I decided to simply create an array of 300 (scores can't possibly get that high, right?) using `[...Array(300).keys()]`. Then create the 300 numbers (elements), and stack them vertically with flex. I also obviously set the overflow to hidden on the parent container.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I then used a position of relative and decided to animate the scrolling with `top: 000%`, and update the style positions like so: `{ top: '-${goals}00%' }`.
 
-### `npm run eject`
+My animation settings are: `transition: all 300ms ease-in-out;`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+With the correct line-height, this approach works perfectly.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Given More Time
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+If I wanted to spend more time creating this into a fully fledged and reusable scoreboard, I would like to be able to click on the team logo and have a list of the team logos pop up to select.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Cap Feathers 🪶
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Problem solving without looking up solutions. Deciding on the quickest and easiest approach to achieve the objective.
